@@ -14,13 +14,4 @@
 Route::get('/', function()
 {
 	return View::make('hello');
-    //return 'Users!';
-});
-
-Route::get('/bla', function(){
-
-    $nekej = 2313;
-
-    return View::make('bla')->with(['nekej' => $nekej]);
-
 });
