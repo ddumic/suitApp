@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.0">
+  <CommandSet xml:lang="en-US" Name="RemoterEnu">
+    <CommandPrefix>suit app</CommandPrefix>
+    <Example> start </Example>
+    
+
+    <Command Name="Start">
+      <Example> Start </Example>
+      <ListenFor> start </ListenFor>
+      <ListenFor> begin </ListenFor>
+      <ListenFor> open </ListenFor>
+      <Feedback> Starting suitApp... </Feedback>
+      <Navigate Target="/MainPage.xaml" />
+    </Command>
+
+    <Command Name="Search">
+      <Example>Search</Example>
+      <ListenFor>search</ListenFor>
+      <Feedback>suitApp: Opening seach module</Feedback>
+      <Navigate Target="/Pages/searchModule.xaml"/>
+    </Command>
+    
+  </CommandSet>
+</VoiceCommands>

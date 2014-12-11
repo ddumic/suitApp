@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="suiteApp.item"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="102" d:DesignWidth="411">
+
+    <Grid x:Name="LayoutRoot" Background="{StaticResource PhoneBackgroundBrush}" Margin="0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="7*"/>
+            <ColumnDefinition Width="33*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Margin="0" VerticalAlignment="Center" Grid.Column="1" Tap="dohvatiInformacije">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Margin="0,0,10,0" Orientation="Horizontal">
+
+                    <TextBlock x:Name="Naziv" TextWrapping="Wrap" FontFamily="{StaticResource PhoneFontFamilyNormal}" FontSize="{StaticResource PhoneFontSizeLarge}" Margin="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="319">
+						<Run Text="Traperice"/>
+                    </TextBlock>
+
+                </StackPanel>
+            </Grid>
+            <TextBlock x:Name="ShortDesc" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Mustang Jeans" VerticalAlignment="Top" FontFamily="{StaticResource PhoneFontFamilyNormal}" FontSize="{StaticResource PhoneFontSizeSmall}" Foreground="{StaticResource PhoneSubtleBrush}" Width="329"/>
+        </StackPanel>
+        <CheckBox x:Name="oznaka" Margin="0,10,0,10"/>
+    </Grid>
+</UserControl>
